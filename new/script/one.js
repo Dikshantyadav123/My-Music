@@ -5,10 +5,11 @@ var x = [
       
        //
         
-        {dp:"",
-      story:""},
-        {dp:"",
-      story:""},
+        {dp:"new/images/A1.jpg",
+      story:"new/images/A1.jpg"},
+
+        {dp:"new/images/A2.jpg",
+      story:"new/images/A2.jpg"},
       
       {dp:"",
       story:""},
