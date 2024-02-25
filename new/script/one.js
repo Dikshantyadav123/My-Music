@@ -2,12 +2,15 @@ var x = [
     {dp:"https://photos.google.com/u/2/photo/AF1QipOEzN2p3aCi7o06CsGcR70z2ssGmFd7MsufPNa7",story:"https://photos.google.com/u/2/photo/AF1QipOEzN2p3aCi7o06CsGcR70z2ssGmFd7MsufPNa7"},
      
        //
-    {dp:"../new/images/D (1).jpg",story:"../new/images/D (1).jpg"},
-    {dp:"../new/images/D (2).jpg",story:"../new/images/D (2).jpg"},
-    {dp:"../new/images/D (3).jpg",story:"../new/images/D (3).jpg"},
-    {dp:"../new/images/D (4).jpg",story:"../new/images/D (4).jpg"},
-    {dp:"../new/images/D (5).jpg",story:"../new/images/D (5).jpg"},
-  //
+
+          {dp:"../new/images/XYZ.jpg",story:"../new/images/XYZ.jpg"},
+          {dp:"../new/images/A1.jpg",story:"../new/images/A1.jpg"},
+          {dp:"../new/images/A2.jpg",story:"../new/images/A2.jpg"},
+          {dp:"../new/images/A3.jpg",story:"../new/images/A3.jpg"},
+          {dp:"../new/images/A4.jpg",story:"../new/images/A4.jpg"},
+          {dp:"../new/images/A5.jpg",story:"../new/images/A5.jpg"},
+  
+       //
   
     {dp:"../new/images/A (1).jpg",story:"../new/images/A (1).jpg"},
     {dp:"../new/images/A (2).jpg",story:"../new/images/A (2).jpg"},
