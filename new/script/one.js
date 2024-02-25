@@ -3,7 +3,7 @@ var x = [
      
        //
 
-          {dp:"../new/images/XYZ.jpg",story:"../new/images/XYZ.jpg"},
+          {dp:"new\images\A1.jpg",story:"new\images\XYZ.jpg"},
           {dp:"../new/images/A1.jpg",story:"../new/images/A1.jpg"},
           {dp:"../new/images/A2.jpg",story:"../new/images/A2.jpg"},
           {dp:"../new/images/A3.jpg",story:"../new/images/A3.jpg"},
