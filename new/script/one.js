@@ -203,3 +203,173 @@ window.addEventListener('scroll', function() {
       storyLine.classList.add('animate');
   }
 });
+
+
+// G SAP TRIGGER 
+//
+//
+
+const info= gsap.timeline();
+
+
+info.from(".one ",{
+
+  x:200, 
+  opacity:0, 
+    duration:2, 
+  stagger:1, 
+    scrollTrigger:{
+  trigger:".rule", 
+    scroller:" body", 
+   // markers:true, 
+  start:"top 70%", 
+  end: "top -880% ", 
+   // trigger:" top80%", 
+    scrub:2, 
+    //pin:true, 
+
+
+    }
+    
+})
+
+const Foot1 = gsap.timeline();
+
+Foot1.from("#Foot1",{
+
+  scale:-1, 
+  opacity:0, 
+    duration:2, 
+
+    scrollTrigger:{
+  trigger:"#Foot1", 
+    scroller:" body", 
+   //  markers:true, 
+ //   start:"top 70%", 
+    end: "top ", 
+   // trigger:" top80%", 
+   scrub:5, 
+    //pin:true, 
+
+
+    }
+    
+})
+
+
+
+Foot1.from("#foot3",{
+
+  scale:-3, 
+  opacity:0, 
+    duration:2, 
+
+    scrollTrigger:{
+  trigger:"#foot3", 
+    scroller:" body", 
+  //   markers:true, 
+  //  start:"top 70%", 
+    end: "top ", 
+   // trigger:" top80%", 
+   scrub:5, 
+    //pin:true, 
+
+
+    }
+    
+})
+
+
+Foot1.from("#Foot4",{
+
+  scale:4, 
+  opacity:0, 
+    duration:3, 
+ 
+    scrollTrigger:{
+  trigger:"#Foot4", 
+    scroller:" body", 
+    // markers:true, 
+   end: "top 0% ", 
+   start:"top 5%", 
+   scrub:9, 
+    //pin:true, 
+
+
+    }
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+// second Part 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Create a GSAP timeline
+  const tl = gsap.timeline();
+
+  // Animations using GSAP
+  tl.from("#headline1", {
+    duration: 1,
+    scale: 0.2,
+    opacity: 0,
+    ease: "power2.out",
+  }) 
+  .to("#headline1 ", {
+    duration: 2,
+backgroundImage:"linear-gradient(#ff6f00, white ,white, green)", 
+    opacity: 1,
+    ease: "power2.out",
+  }) 
+
+
+
+  // Function to split the text into letters
+  function splitTextToLetters(element) {
+    const text = element.textContent;
+    element.innerHTML = "";
+    for (let i = 0; i < text.length; i++) {
+      const letter = document.createElement("span");
+      letter.textContent = text[i];
+      element.appendChild(letter);
+    }
+  }
+
+  // Split the text within the h1 elements into letters
+  splitTextToLetters(document.getElementById("headline1"));
+  splitTextToLetters(document.getElementById("headline2"));
+ tl.from("#headline1", {
+    duration: 2,
+    opacity: 0,
+    y: -20,
+    stagger: 0.1, // Delay between letters
+    ease: "power2.out",
+   fontSize:33, 
+   marginLeft:20, 
+   color:"green", 
+  })
+    gsap.from("#headline2 span", {
+      delay:4, 
+      duration: 1,
+      opacity: 0,
+      y: -20,
+      stagger: 0.1, // Delay between letters
+      ease: "power2.out",
+     fontSize:30,
+      color:"green", 
+
+    });
+  // Animations using GSAP for each letter
+
+});
