@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animation for linear gradient background */
+
+
+/* Apply linear gradient background animation to an element with class image-playing-animation */
+.image-playing-animation {
+  animation:rotateCube 15s linear infinite  ,colorAnimation2 0.25s linear infinite;
+}
+
+/* Animation for more complex linear gradient background */
+
+
+/* Animation for rotating linear gradient background */
+@keyframes colorAnimation2 {
+  0% {
+    background-image: linear-gradient(-70deg, 
+      red, orange, yellow, green, blue, indigo, violet, 
+      #ff8c00, #8a2be2, #00ced1, #ffd700, #adff2f,
+      #ff1493, #00ffff, #ff4500, #9400d3, #32cd32, #800080, #ff6347
+    );  }
+  100% {
+    background-image: linear-gradient(60deg, 
+      red, orange, yellow, green, blue, indigo, violet, 
+      #ff8c00, #8a2be2, #00ced1, #ffd700, #adff2f,
+      #ff1493, #00ffff, #ff4500, #9400d3, #32cd32, #800080, #ff6347
+    );  }
+}
+
+/* Apply rotating linear gradient background animation to an element with class playing-animation2 */
+.playing-animation {
+  animation: colorAnimation2 0.325s linear infinite;
+}
+
+/* Linear gradient background animation for the main container */
+/* Define keyframes for cube rotation */
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* Apply animation to the cube */
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s linear infinite;
+}
+
+/* Define each face of the cube */
+.cube .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 128, 255, 0.7);
+  border: 1px solid #fff;
+}
+
+/* Position each face based on the cube's rotation */
+.cube .face:nth-child(1) {
+  transform: translateZ(50px);
+}
+
+.cube .face:nth-child(2) {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube .face:nth-child(3) {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.cube .face:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube .face:nth-child(5) {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube .face:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(50px);
+}

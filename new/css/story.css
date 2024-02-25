@@ -1,0 +1,91 @@
+/* Define font-face for custom font */
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('./Nexa Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GULDENZ.otf';
+    src: url('./GULDENZ.otf') format('truetype');
+}
+
+.card_top_1{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'GULDENZ.otf';
+background-color: rgba(3, 68, 82, 0.647);
+font-kerning: auto;
+
+}
+.highlight {
+    color: blue;
+    font-weight: bold;
+}
+.strong-highlight {
+    color: red;
+    font-weight: bold;
+}
+.card_top_1 h1 {
+    color: rgb(41, 4, 63);
+    font-weight: 999;
+}
+/* Styling for .story_sec */
+.story_sec {
+    
+    margin: 2vw 1vw;
+    min-height: 90vh;
+    width: 95vw;
+    border-bottom-left-radius: 2vw;
+    box-sizing: content-box;
+    
+    border-right: 5px solid rgb(143, 139, 139);
+    box-shadow: 3px 5px 9px rgb(130, 174, 239);
+    cursor: vertical-text;
+    transition: transform 0.5s, box-shadow 5s, border-bottom-left-radius 3s;
+    position: relative; /* Added for absolute positioning */
+    overflow: hidden; /* Added to hide overflowing content */
+}
+
+/* Styling for #story_line_1 */
+#story_line_1 {
+    max-width: 47%;
+        margin: 2vw 1vw;
+        padding-left: 2vw;
+        border-bottom-left-radius: 5vw;
+        min-width: min-content;
+        min-height: min-content;
+        border-left: 2px solid rgb(84, 83, 83);
+        box-shadow: 1px 0px 9px rgb(110, 109, 109);
+        cursor: text;
+        transition: transform 0.5s, box-shadow 5s, border-bottom-left-radius 3s;
+    color: rgb(22, 1, 42);
+    background-color: rgba(2, 11, 38, 0.422);
+    border-left: 5px solid rgb(1, 29, 1);
+    margin-top: 10vh;
+    padding-bottom: 20vh;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow */
+    animation: neon 1s ease-in-out infinite alternate; /* Neon animation */
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 900px) {
+    #story_line_1 {
+        max-width: 97%;
+        margin: 2vw 1vw;
+        padding-left: 2vw;
+        border-bottom-left-radius: 5vw;
+        min-width: min-content;
+        min-height: min-content;
+        border-left: 2px solid rgb(84, 83, 83);
+        box-shadow: 1px 0px 9px rgb(110, 109, 109);
+        cursor: text;
+        transition: transform 0.5s, box-shadow 5s, border-bottom-left-radius 3s;
+    }
+}
+
+strong {
+    color: rgb(7, 7, 60);
+    font-weight: 900;
+}

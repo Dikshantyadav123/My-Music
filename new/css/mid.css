@@ -1,0 +1,109 @@
+.mid {
+    background-color:black;
+
+}
+
+.mid1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background-color:transparent;
+}
+
+.sec1{
+    padding: 2px;
+    background-color: transparent;
+    height:13vw;
+    border-radius: 12px;
+    border: 2px solid black;
+    overflow-x: auto;
+    white-space:nowrap ;
+    align-self: center;
+}
+
+.sec1::-webkit-scrollbar{
+    display: none;
+}
+#story {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(135deg,rgb(232, 6, 194), red,blue,rgb(121, 2, 241)50%,transparent 50%) ;
+    padding:5px ;
+    background-size: 250%;
+    background-position: 100% 100%;
+    border: 2PX SOLID beige;
+    transition: background 0.5s ;
+}
+#story:hover {
+    background-position: 0% 0%;
+    padding: 6px;
+}
+.sec1 img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        display: inline-block;
+
+} 
+
+
+
+#show {
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    /* background-image:  linear-gradient(45deg, #067ff8 ,red ,green,rgb(78, 217, 248),blue,pink,rgb(98, 5, 98));
+     */
+     background-color:  rgba(0, 0, 0, 0.674);
+     
+}
+
+
+
+#full-screen{
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size:cover;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+
+
+
+
+#show-img  img {
+    height: fit-content;
+    max-height: 95vh;
+    max-width: 95vw;
+}
+.neonText  {
+    color: #7e7d7dde;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+@keyframes flicker {
+    0%, 19.999%, 22%, 100% {
+        opacity: 1;
+    }
+    20%, 21.999% {
+        opacity: 0;
+    }
+}
+
+.neonText {
+    animation: flicker 2.5s infinite alternate;
+}

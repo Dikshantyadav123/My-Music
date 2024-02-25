@@ -1,0 +1,255 @@
+
+
+@font-face {
+    font-family: 'AbrilFatface-Regular';
+    src: url('./AbrilFatface-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nexa Bold.otf';
+    src: url('./Nexa Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GULDENZ.otf';
+    src: url('./GULDENZ.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CircularStd-Book';
+    src: url('./Calvier.ttf') format('truetype');
+}
+
+.one {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: auto for .one_A, 1fr for the rest (including .box) */
+    align-items: center; /* Center items vertically in the grid */
+    background-color: rgb(6, 0, 33);
+    padding: 2vw 1vw;
+    background: linear-gradient(45deg, #ff00cc, #000637);
+}
+
+.box_X {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr)); /* Adjust the number of columns as needed */
+    gap: 1vw; /* Adjust the gap between columns */
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 0;
+    transition: display 5s;
+}
+
+
+.box {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr)); /* Adjust the number of columns as needed */
+    gap: 1vw; /* Adjust the gap between columns */
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 0;
+    transition: display 5s;
+}
+
+.box p {
+    
+    /* text-shadow: 0 0 20px rgb(239, 138, 219), 0 0 40px rgba(51, 204, 255, 1), 0 0 60px rgba(255, 0, 204, 1);
+     */
+     
+    font-family: 'Nexa Bold.otf';
+    font-size: medium;
+    font-weight: 100;
+    font-stretch:200% ;
+    transition:color 2s, transform 1s,box-shadow 3s,border-radius 3s, background-color 0.3s;
+    padding: 2vw;
+}
+
+.box p:hover{
+    transform: scale(1.1)  translateZ(50px);
+    color: rgb(217, 183, 250);
+}
+.one_A {
+
+    justify-self: start;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.8), 0 0 20px rgba(51, 204, 255, 0.8), 0 0 30px rgba(255, 0, 204, 0.8);
+    box-shadow:1px 0px 9px rgb(110, 109, 109) ;
+    cursor: pointer;
+    transition: transform 1s,box-shadow 3s,border-radius 3s, background-color 0.3s;
+    padding: 2vw;
+}
+.one_A:hover { 
+    
+    background: linear-gradient(45deg, #ff00cc, #33ccff);
+    box-shadow: 0 0 20px rgba(255, 0, 204, 1), 0 0 40px rgba(51, 204, 255, 1), 0 0 60px rgba(255, 0, 204, 1);
+    border-radius:5px ;
+    transform: scale(1.1) translateX(30px) translateZ(20px);
+}
+.one_B, .one_C, .one_D, .one_E, .one_F {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 1vw;
+    height:4vw;
+    width:7vw;
+    border-bottom-left-radius:2vw ;
+    box-sizing: content-box;
+    box-decoration-break: clone;
+    border-left: 2px solid rgb(84, 83, 83);
+    box-shadow:1px 0px 9px rgb(110, 109, 109) ;
+    cursor: pointer;
+    transition: transform 0.5s,box-shadow 5s,border-bottom-left-radius 3s;
+}
+
+.one_B:hover, .one_C:hover, .one_D:hover, .one_E:hover, .one_F:hover {
+    border-left: 2px solid rgb(84, 83, 83);
+    /* box-shadow: 0 0 20px rgba(255, 0, 204, 1), 0 0 40px rgba(51, 204, 255, 1), 0 0 60px rgb(126, 233, 247);
+     */
+     color: rgb(60, 93, 240);
+     text-shadow: 0 0 7px #a19e9e,
+     0 0 10px #fff,
+     0 0 21px #071460,
+     0 0 42px #0fa,
+     0 0 82px #0fa,
+     0 0 92px #0fa,
+     0 0 102px #0fa,
+     0 0 151px rgb(25, 0, 255);
+    border-radius:5px ;
+    border-bottom-left-radius:5px ;
+    transform: scale(1.5) translateZ(25px) translateY(10px); 
+}
+
+.neon-text {
+    font-family: 'CircularStd-Book';
+    font-size: 36px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-shadow: 0 0 10px rgba(255, 0, 204, 0.8), 0 0 20px rgba(51, 204, 255, 0.8), 0 0 30px rgba(255, 0, 204, 0.8);
+    transition: font-family 7s, text-shadow 0.3s ,color 3s ,transform 2s;
+}
+
+.neon-text:hover {
+    transform:scale3d(2px) translateX(2px) translateZ(20px);
+    color: black;
+    text-shadow: 0 0 7px #fff,
+     0 0 10px #8e71f636,
+     0 0 21px #fff,
+     0 0 42px rgba(0, 251, 255, 0.768),
+     0 0 82px #0fa,
+     0 0 92px rgb(229, 245, 239),
+     0 0 102px #0fa,
+     1px 1px 151px rgb(225, 240, 235);
+    font-weight:lighter;
+    text-transform: uppercase;
+}
+
+/* Media Query to hide .box when window width is less than 800 pixels */
+@media screen and (max-width: 900px) {
+
+
+    .box_X {
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: linear-gradient(45deg, #ff00cc, #33ccff);
+        z-index: 1;
+        min-width: 40vw;
+      }
+      
+   
+.one_B, .one_C, .one_D, .one_E, .one_F {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    min-width:min-content ;
+    min-height: min-content;
+    margin: 4vw 1vw;
+    transition: transform 1s,box-shadow 3s,border-bottom-left-radius 0.5s;
+    border-bottom-left-radius:6vw ;
+    
+    
+    border-left: 2px solid rgb(84, 83, 83);
+    box-shadow:1px 0px 9px rgb(72, 50, 50) ;
+    cursor: pointer;
+    
+}
+.one_B {
+    padding: 3vw;
+}
+    .box {
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        padding-bottom: 4vh;
+    }
+  
+}
+
+@media screen and (min-width: 900px) {
+    
+  .dropdown-content {
+    display:none; 
+   
+  }
+  
+    .dropbtn {
+        display: none;
+    }
+.box{
+    display: flex;
+}
+} 
+
+/* 
+Dropdown Button */
+.dropbtn {
+    background: linear-gradient(45deg, #f7d168, #6b0241);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2vw;
+    align-self: flex-end;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+
+  .dropdown-content {
+     display:none;  
+    position: absolute;
+    background: linear-gradient(45deg, #ff00cc,rgb(44, 122, 248), #33ccff);
+    z-index: 1;
+    min-width: 40vw;
+    border-radius: 2vw;
+    color: #0b5a75;
+    text-transform: uppercase;
+    font-family: 'CircularStd-Book';
+    opacity: 0.98;
+    box-shadow:5px 6px 9px #000637;
+
+  }
+  
+ 
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
