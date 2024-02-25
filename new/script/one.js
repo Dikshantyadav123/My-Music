@@ -350,7 +350,7 @@ backgroundImage:"linear-gradient(#ff6f00, white ,white, green)",
   // Split the text within the h1 elements into letters
   splitTextToLetters(document.getElementById("headline1"));
   splitTextToLetters(document.getElementById("headline2"));
- tl.from("#headline1", {
+ tl.from(".neonText span", {
     duration: 2,
     opacity: 0,
     y: -20,
