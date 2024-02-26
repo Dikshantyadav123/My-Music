@@ -138,8 +138,8 @@ var x = [
     }
       setTimeout( function(){
        
-      tl.to("#full-screen", {rotate:1800,  duration: 1, scale:.1, display :"none" });
-
+      tl.to("#full-screen", {rotate:720,  duration: 1, scale:.1, display :"none" });
+      gsap.t0("#full-screen", {rotate:-720,});
      // document.querySelector("#full-screen").style.display = "none";
       },5000)
 
