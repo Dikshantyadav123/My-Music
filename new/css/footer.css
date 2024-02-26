@@ -1,108 +1,99 @@
 
 
-  .foot_one { 
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
-      padding:5px ;
-      padding:5px ;
-      z-index:-1;
-      bottom: 0;
-      background-color: black;
-  }
-  .foot_one img {
-      z-index: 0;
-      position: fixed;
-      max-height: 100vh;
-  }
-  footer {
-      width: 100%;
-      border: 2px solid rgb(84, 80, 80);
-      border-radius: 5px;
-      background-color:transparent;
-      margin-top: auto;
-  }
-  
-  .link {
-      background-color:transparent;
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      flex-direction: column;
-      padding-bottom: 20px;
-      padding: 5vw;
-  }
-  
-  .link a {
-      text-decoration: none;
-      color: azure;
-      margin-top: 10px;
-      background-color: red;
-      padding: 5px 10px;
-      box-shadow: 2px 3px 8px white;
-      border-radius: 5px;
-  }
-  
-  .link a:hover {
-      background-color: aqua;
-      color: black;
-      padding: 7px 12px;
-  }
-  
-  .link2 {
-      background-color:transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-  }
-  
-  .link2a {
-      height: 9vw;
-      width: 9vw;
-      margin: 1vw 2vw;
-      border-radius: 50%;
-      cursor: pointer;
-      background: linear-gradient(135deg, rgb(238, 111, 217), rgb(244, 89, 89), rgb(53, 235, 252), rgb(121, 2, 241) 50%, transparent 50%);
-      padding: 5px;
-      background-size: 250%;
-      background-position: 100% 100%;
-      border: 2px solid beige;
-      transition: background 0.5s;
-  }
-  
-  .link2a:hover {
-      background-position: 0% 0%;
-      padding: 6px;
-  }
-  
-  .link2a img {
-      height: 9vw;
-      width: 9vw;
-      border-radius: 50%;
-  }
-  
-  .copy {
-      display: flex;
-      justify-content: center;
-      color: white;
-      background-color: rgb(16, 15, 15);
-  }
-  
-  @media (min-width: 1100px) {
-      #ph1 {
-          display: flex;
-          border-radius: 10vw;
-      }
-  
-      #ph2 {
-          justify-self: end;
-      }
-  }
-  
-  @media (max-width: 1100px) {
-      #ph2 {
-          display: none;
-      }
-  }
-  
+.foot_one { 
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    padding:5px ;
+    padding:5px ;
+    z-index:-1;
+    bottom: 0;
+    background-color: black;
+}
+.foot_one img {
+    z-index: 0;
+    position: fixed;
+    max-height: 100vh;
+}
+.link {
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding: 5vw;
+}
+
+.link a {
+    text-decoration: none;
+    color: azure;
+    margin-top: 10px;
+    background-color: red;
+    padding: 5px 10px;
+    box-shadow: 2px 3px 8px white;
+    border-radius: 5px;
+}
+
+.link a:hover {
+    background-color: aqua;
+    color: black;
+    padding: 7px 12px;
+}
+
+.link2 {
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.link2a {
+    height: 9vw;
+    width: 9vw;
+    margin: 1vw 2vw;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgb(238, 111, 217), rgb(244, 89, 89), rgb(53, 235, 252), rgb(121, 2, 241) 50%, transparent 50%);
+    padding: 5px;
+    background-size: 250%;
+    background-position: 100% 100%;
+    border: 2px solid beige;
+    transition: background 0.5s;
+}
+
+.link2a:hover {
+    background-position: 0% 0%;
+    padding: 6px;
+}
+
+.link2a img {
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(16, 15, 15);
+}
+
+@media (min-width: 1100px) {
+    #ph1 {
+        display: flex;
+        border-radius: 10vw;
+    }
+
+    #ph2 {
+        justify-self: end;
+    }
+}
+
+@media (max-width: 1100px) {
+    #ph2 {
+        display: none;
+    }
+}

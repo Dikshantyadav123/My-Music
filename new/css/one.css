@@ -28,7 +28,9 @@
     padding: 2vw 1vw;
     background: linear-gradient(45deg, #ff00cc, #000637);
 }
-
+.one a {
+    text-decoration: none;
+}
 .box_X {
     justify-self: end;
     display: grid;

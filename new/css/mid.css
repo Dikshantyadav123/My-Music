@@ -61,14 +61,15 @@
     /* background-image:  linear-gradient(45deg, #067ff8 ,red ,green,rgb(78, 217, 248),blue,pink,rgb(98, 5, 98));
      */
      background-color:  rgba(0, 0, 0, 0.674);
-     
+     border-radius: 5PX;
+     box-shadow:2PX 2PX 11PX rgb(237, 144, 223) ;
 }
 
 
 
 #full-screen{
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     background-position: center;
     background-size:cover;
     position: fixed;
@@ -82,7 +83,15 @@
 #show-img  img {
     height: fit-content;
     max-height: 95vh;
-    max-width: 95vw;
+    max-width: 90vw;
+    border-radius: 10PX;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.8), 0 0 20px rgba(51, 204, 255, 0.8), 0 0 30px rgba(255, 0, 204, 0.8);
+    box-shadow:1px 2px 99px rgb(4, 216, 249) ;
+    cursor: pointer;
+    /* transition: transform 1s,box-shadow 3s,border-radius 3s, background-color 0.3s;
+    */
 }
 .neonText  {
     color: #7e7d7dde;
