@@ -120,3 +120,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // Play the first song by default
   playSong(currentSongIndex);
 });
+
+
+
+
+
+
+
+Shery.makeMagnet(".magnet" /* Element to target.*/, {
+  //Parameters are optional.
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: .11,
+});
+
+Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: .21,
+});
+
